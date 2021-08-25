@@ -1,1 +1,1 @@
-export * from './lib/styles.scss';
+export default {};
