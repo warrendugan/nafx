@@ -23,6 +23,7 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+
       - name: Install
         run: npm install
 
@@ -32,5 +33,4 @@ jobs:
       - name: Publish
         run: npm run affected:publish
         env:
-          GITHUB_TOKEN: ${{ secrets.GPR_AUTOMATION_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_AUTOMATION_TOKEN }}
