@@ -3,7 +3,7 @@
   "projects": {
     "button": "libs/button",
     "naf-x": "apps/naf-x",
-    "styles": "libs\\styles"
+    "styles": "libs/styles"
   },
   "cli": {
     "defaultCollection": "@nrwl/angular"
