@@ -1,0 +1,31 @@
+{
+  "projectType": "library",
+  "root": "libs/button",
+  "sourceRoot": "libs/button/src",
+  "prefix": "nafx",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/button"],
+      "options": {
+        "project": "libs/button/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/button/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/button/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/button/src/**/*.ts", "libs/button/src/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}

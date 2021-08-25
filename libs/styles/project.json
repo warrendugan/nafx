@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "root": "libs/styles",
+  "sourceRoot": "libs/styles/src",
+  "prefix": "nafx",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:package",
+      "outputs": ["dist/libs/styles"],
+      "options": {
+        "project": "libs/styles/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/styles/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/styles/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    }
+  },
+  "tags": []
+}

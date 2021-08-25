@@ -1,0 +1,14 @@
+main {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+
+  figure {
+    max-width: 500px;
+    padding: min(var(--spacer) * 2);
+
+    p {
+      margin-bottom: var(--spacer);
+    }
+  }
+}
