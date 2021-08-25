@@ -25,6 +25,14 @@
       "options": {
         "lintFilePatterns": ["libs/button/src/**/*.ts", "libs/button/src/**/*.html"]
       }
+    },
+    "publish": {
+      "builder": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": ["npm version prerelease", "npm publish"],
+        "cwd": "libs/button",
+        "parallel": false
+      }
     }
   },
   "tags": []
