@@ -38,3 +38,11 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTOMATION_TOKEN }}
       - name: Publish
         run: npm run affected:publish
+
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Release [CICD]" -a || true
+          git push
