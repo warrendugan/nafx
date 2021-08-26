@@ -1,6 +1,10 @@
 {
   "name": "@nafx/button",
   "version": "0.0.2-2",
+  "scripts": {
+    "typedoc:build": "npx typedoc --plugin typedoc-plugin-markdown src/index.ts --tsconfig ./tsconfig.json",
+    "typedoc:copy": "cp -f docs/README.md README.md"
+  },
   "peerDependencies": {
     "@angular/common": "^12.1.0",
     "@angular/core": "^12.1.0"

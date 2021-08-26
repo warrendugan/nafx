@@ -29,9 +29,10 @@
     "publish": {
       "builder": "@nrwl/workspace:run-commands",
       "options": {
-        "commands": ["nx run button:prerelease", "npm publish"],
+        "commands": ["nx run button:prerelease", "nx run button:summarize", "npm publish"],
         "cwd": "libs/button",
-        "parallel": false
+        "parallel": false,
+        "color": true
       }
     },
     "prerelease": {
@@ -39,9 +40,18 @@
       "options": {
         "commands": ["npm version prerelease"],
         "cwd": "libs/button",
+        "color": true
+      }
+    },
+    "summarize": {
+      "builder": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": ["npm run typedoc:build", "npm run typedoc:copy"],
+        "cwd": "libs/button",
+        "outputPath": "libs/button/docs",
         "parallel": false
       }
     }
   },
-  "tags": []
+  "tags": ["npm"]
 }

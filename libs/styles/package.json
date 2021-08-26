@@ -1,6 +1,10 @@
 {
   "name": "@nafx/styles",
   "version": "0.0.2-2",
+  "scripts": {
+    "typedoc:build": "npx typedoc --plugin typedoc-plugin-markdown src/index.ts --tsconfig ./tsconfig.json",
+    "typedoc:copy": "cp -f docs/README.md README.md"
+  },
   "dependencies": {
     "tslib": "^2.2.0"
   }
