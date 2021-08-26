@@ -1,6 +1,6 @@
 {
   "name": "@nafx/button",
-  "version": "0.0.2-2",
+  "version": "0.0.2-3",
   "peerDependencies": {
     "@angular/common": "^12.1.0",
     "@angular/core": "^12.1.0"
