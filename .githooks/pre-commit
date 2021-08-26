@@ -1,2 +1,6 @@
 #!/bin/sh
-npm run format 
+echo "Running npm run format"
+npm run format
+
+echo "Running npm run prerelease"
+npm run prerelease

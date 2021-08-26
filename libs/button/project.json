@@ -29,7 +29,15 @@
     "publish": {
       "builder": "@nrwl/workspace:run-commands",
       "options": {
-        "commands": ["npm version prerelease", "npm publish"],
+        "commands": ["npm publish"],
+        "cwd": "libs/button",
+        "parallel": false
+      }
+    },
+    "prerelease": {
+      "builder": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": ["npm version prerelease"],
         "cwd": "libs/button",
         "parallel": false
       }
