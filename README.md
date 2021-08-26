@@ -1,4 +1,4 @@
-# NAFX
+# NAFX [![CI](https://github.com/warrendugan/nafx/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/warrendugan/nafx/actions/workflows/main.yml)
 
 This project was generated using [Nx](https://nx.dev).
 
